@@ -1,4 +1,4 @@
 # Cours-Transport-Paris
 
-API référencentles places de stationnement à Paris.
+API référencent les places de stationnement à Paris.
 Données de opendata.paris.fr
