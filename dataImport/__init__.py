@@ -1,2 +1,5 @@
-def stationsLocation:
+def stationsLocation ():
+ pass
+
+def stationsPathInfo():
  pass
