@@ -1,3 +1,7 @@
+"""
+Main program
+"""
+
 import dataImport
 import dataOuput
 
