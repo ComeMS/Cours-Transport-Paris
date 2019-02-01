@@ -1,6 +1,6 @@
 """
 Main program
-    
+
     Parameters:
     -----------
     addressSource: tuple
@@ -11,11 +11,14 @@ Main program
     Return:
     -------
     tuple
-      (itinerary, distance, time)    
+      (itinerary, distance, time)
 """
 import sys
 import dataImport
 import dataOuput
+
+#geopy
+from geopy.geocoders import Nominatim
 
 if __name__ == "__main__":
 if len(sys.argv) == 4:
@@ -29,4 +32,3 @@ if len(sys.argv) == 4:
 
     else:
         print("Usage: python main.py <sourcePostion> <destPostion> <radius>")
-

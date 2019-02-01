@@ -9,3 +9,9 @@ Données de opendata.paris.fr
 * Mariama
 * Quentin
 * Lyes BOUALI
+
+
+# How to run:
+
+You need to install geopy to get coordinates from a string, use:
+`pip install geopy`
