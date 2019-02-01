@@ -45,3 +45,6 @@ adress2 = "8 Rue Scribe, 75008 Paris"
 
 lat1, long1 = getCoordinates(adress1)
 lat2, long2 = getCoordinates(adress2)
+
+nameStation1, latStation1, longStation1, distStation1 = nearbyStation([lat1,long1])
+nameStation2, latStation2, longStation2, distStation2 = nearbyStation([lat2,long2])
