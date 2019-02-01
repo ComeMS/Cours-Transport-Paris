@@ -16,6 +16,7 @@ Main program
 import sys
 import dataImport
 import dataOuput
+import process
 
 #geopy
 from geopy.geocoders import Nominatim
@@ -32,3 +33,10 @@ if len(sys.argv) == 4:
 
     else:
         print("Usage: python main.py <sourcePostion> <destPostion> <radius>")
+
+
+adress1 = "55 Rue des Petits Champs, 75001 Paris"
+adress2 = "8 Rue Scribe, 75008 Paris"
+
+lat1, long1 = getCoordinates(adress1)
+lat2, long2 = getCoordinates(adress2)
