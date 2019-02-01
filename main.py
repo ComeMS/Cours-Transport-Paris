@@ -20,6 +20,10 @@ import process
 
 #geopy
 from geopy.geocoders import Nominatim
+from geopy.distance import vincenty
+
+import pandas as pd
+
 
 if __name__ == "__main__":
 if len(sys.argv) == 4:

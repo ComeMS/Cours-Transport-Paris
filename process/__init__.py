@@ -1,6 +1,7 @@
-def nearbyStations(positionGPSCoordinates):
+def nearbyStation(positionGPSCoordinates):
   """
-    finds the stations around the given position and the max distance of search
+    finds the station nearest to the given position and the name of the station
+    using stations as the dataframe to find the stations
     Parameters:
     -----------
 
@@ -10,9 +11,22 @@ def nearbyStations(positionGPSCoordinates):
     Return:
     -------
     list: Coordinates of neareast station
-      (lat,long)
+      [name,lat,long,distance in meters]
   """
-    pass
+
+
+  latS, longS = list(stations.loc[0])[1:]
+  dist = distance.vincenty([lat1,long1],[latS,longS]).m
+  station=list(stations.loc[0])
+  index=0
+  for i in range(1,stations.shape[0]):
+    latS, longS = list(stations.loc[i])[1:]
+    distTemp = distance.vincenty(positionGPSCoordinates,[latS,longS]).m
+    if distTemp < dist:
+        dist=distTemp
+        station=list(stations.loc[i])
+    station.append(dist)
+    return station
 
 def findShortestPath(sourceStations, destStations):
     """
