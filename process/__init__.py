@@ -32,4 +32,5 @@ def getCoordinates(adress):
     """
     geolocator = Nominatim()
     coordinates = geolocator.geocode(adress)[1]
+    coordinates = np.array(coordinates)
     return coordinates
