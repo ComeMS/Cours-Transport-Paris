@@ -9,12 +9,26 @@ def nearbyStations(positionGPSCoordinates):
 
     Return:
     -------
-    list: Coordinates of nerby station (lat,long)
-      [(lat,long)] 
+    list: Coordinates of neareast station 
+      (lat,long)
   """
- pass
+    pass
 
 def findShortestPath(sourceStations, destStations):
     """ 
     """
     pass
+
+def getCoordinates(adress):
+    """
+    find the coordinates (lat,long) of a given adress
+    Parameters:
+    -----------
+        adress: string 
+    Return:
+    -------
+        Coordinates: tuple (lat,long)
+
+    """
+
+  pass   
