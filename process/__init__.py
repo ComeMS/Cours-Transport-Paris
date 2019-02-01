@@ -13,7 +13,8 @@ def nearbyStation(positionGPSCoordinates):
     list: Coordinates of neareast station
       [name,lat,long,distance in meters]
   """
-
+  FILEPATH = os.path.join('data','stations.csv')
+  stations = pd.read_csv(FILEPATH,index_col=0)
 
   latS, longS = list(stations.loc[0])[1:]
   dist = distance.vincenty([lat1,long1],[latS,longS]).m
